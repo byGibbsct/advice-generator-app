@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Manrope';
+  font-weight: 800;
+  src: 
+    url(../assets/fonts/manrope/ttf/manrope-latin-800-normal.ttf) format("truetype"),
+    url(../assets/fonts/manrope/webfonts/manrope-latin-800-normal.woff2) format("woff2"),
+    url(../assets/fonts/manrope/webfonts/manrope-latin-800-normal.woff) format("woff");
+}

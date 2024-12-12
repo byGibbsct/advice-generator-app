@@ -4,16 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/main.css">
   
   <title>Frontend Mentor | Advice generator app</title>
 </head>
 <body>
   <main>
-    <h1>Advice Generator App</h1>
-    <div>
-      <h2>Advice #117</h2>
-      <p>"It is easy to sit up and take notice, what's difficult is getting up and taking action.</p>
-      <picture>
+    <h1 class="sr-only">Advice Generator App</h1>
+    <div class="card">
+      <h2 class="card__advice-number">Advice #117</h2>
+      <p class="card__advice-text">"It is easy to sit up and take notice, what's difficult is getting up and taking action.</p>
+      <picture class="card__divider-icon">
         <source srcset="./assets/images/pattern-divider-mobile.svg" media="(max-width:1399px)">
         <img src="./assets/images/pattern-divider-desktop.svg" alt="spacer icon" aria-hidden="true">
       </picture>
