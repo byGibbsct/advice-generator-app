@@ -37,6 +37,7 @@ body {
 
 .card__advice-text {
   font-size: 28px;
+  min-height: 176px;
   padding: 24px 0 38px;
 }
 
