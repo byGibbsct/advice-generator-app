@@ -9,8 +9,17 @@ async function updateAdvice() {
   const adviceComponent = document.querySelector(".card__advice-text");
   const adviceNumberComponent = document.querySelector(".card__advice-number");
 
-  const {id, advice: newAdvice} = await getData();
-  adviceComponent.innerHTML = `"${newAdvice}"`;
+  const newData = await getData();
+  let id = newData.id;
+  let advice = newData.advice;
+
+  while(advice.length > 90 || id == undefined || advice == undefined) {
+      const { newId, advice: newAdvice } = await getData();
+      id = newId;
+      advice = newAdvice;
+  }
+
+  adviceComponent.innerHTML = `"${advice}"`;
   adviceNumberComponent.innerHTML = `ADVICE #${id}`;
 }
 
